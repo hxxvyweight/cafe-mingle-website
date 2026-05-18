@@ -1,4 +1,9 @@
-/* Main section categories for index.html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -15,22 +20,63 @@ header {
   color: #2C2523;
 
 }
+.left-section nav {
+  display: flex;
+  gap: 20px; /* Adds clean spacing between About, Highlights, and Find Us */
+}
+.left-section nav a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #231e1c;             /* Elegant, soft charcoal brown instead of stark black */
+  letter-spacing: 0.5px;       /* Gives a high-end, clean editorial look */
+  transition: color 0.2s ease; /* Smooth fade when hovered */
+}
+
+.left-section nav a:hover {
+  color: #CD7F55;             /* Highlights to your rich latte tone when hovered */
+}
+.left-section {
+  display: flex;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  color: #1c1512;
+  justify-content: center;
+}
+.left-section, .right-section {
+  flex: 1; 
+}
+.right-section {
+  display: flex;
+  text-align: right;
+  justify-content: center;
+}
+
+.right-section .subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  color: #1c1512;
+}
+
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #2C2523;
     font-family: 'DM Serif Display', serif;
-    font-size: 1.75rem;
     letter-spacing: 6px;
-
     font-weight: 700;
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #1c1512;
 }
 
 /* Navigation */
 nav {
   /* navigation styles */
   display: flex;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
@@ -39,6 +85,7 @@ nav {
 
 }
 .subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Hero / Banner */
@@ -53,21 +100,53 @@ nav {
 }
 
 .hero {
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;    /* Centers the text boxes horizontally */
   text-align: center;     /* Centers the actual text lines */
+  padding: 40px;
+  background: #CD7F55;
+}
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.container.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #2C2523;
+    margin-bottom: 8px;
+}
+p {
+    font-family: 'Inter', sans-serif;
 }
 .btn {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     color: rgb(255, 243, 243);
     font-weight: 600;
+    padding: 20px;
 }
 
 /* About */
 .about,
 #about {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 20px;
   min-height: 500px;
   background: #ffecc6;
@@ -86,6 +165,7 @@ nav {
     flex-direction: column;
     
 }
+
 
 /* Menu */
 .menu,
