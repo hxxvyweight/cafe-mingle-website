@@ -18,6 +18,17 @@ header {
   min-height: 100px;
   background: #ffecc6;
   color: #2C2523;
+  position: sticky;
+  top: 0;
+  
+  z-index: 1000; 
+  
+  background-color: rgba(253, 241, 214, 0.9); 
+  
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  
+  border-bottom: 1px solid rgba(28, 21, 18, 0.05);
 
 }
 .left-section nav {
@@ -26,6 +37,7 @@ header {
 }
 .left-section nav a {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -33,10 +45,28 @@ header {
   letter-spacing: 0.5px;       /* Gives a high-end, clean editorial look */
   transition: color 0.2s ease; /* Smooth fade when hovered */
 }
+.left-section nav a::after {
+    content: '';
+    position: absolute; 
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #1a1311;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
 
+.left-section nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
 .left-section nav a:hover {
   color: #CD7F55;             /* Highlights to your rich latte tone when hovered */
 }
+
 .left-section {
   display: flex;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -46,6 +76,14 @@ header {
 }
 .left-section, .right-section {
   flex: 1; 
+}
+.right-section .subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;          
+  font-weight: 600;           
+  text-transform: uppercase;  
+  letter-spacing: 2px;        
+  color: #5a4f4a;             
 }
 .right-section {
   display: flex;
@@ -139,7 +177,19 @@ p {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: rgb(255, 243, 243);
     font-weight: 600;
-    padding: 20px;
+    padding: 12px;
+    opacity: 1;
+    background-color: #1a1311;  
+    color: #FDF1D6;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+
+    transition: opacity 2.5s ease-out;
+}
+.btn:hover {
+  color: #ffdabc;
+  transition: color 0.2s ease-out; 
 }
 
 /* About */
