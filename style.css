@@ -1,0 +1,111 @@
+/* Main section categories for index.html */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Header */
+
+header {
+  /* header styles */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+  background: #ffecc6;
+  color: #2C2523;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C2523;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+    letter-spacing: 6px;
+
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+  /* navigation styles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+
+}
+.subtitle {
+}
+
+/* Hero / Banner */
+.hero,
+.banner {
+    display: flex;
+    background: #C89D7C;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centers the text boxes horizontally */
+  text-align: center;     /* Centers the actual text lines */
+}
+.btn {
+    color: rgb(255, 243, 243);
+    font-weight: 600;
+}
+
+/* About */
+.about,
+#about {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 500px;
+  background: #ffecc6;
+  gap: 30px;
+  /* about section styles */
+}
+.features-image-slideshow {
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px;
+    min-height: 200px;
+
+}
+.container.grid-3 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Menu */
+.menu,
+#menu {
+  /* menu section styles */
+}
+
+/* Gallery */
+.gallery,
+#gallery {
+  /* gallery section styles */
+}
+
+/* Contact */
+.contact,
+#contact {
+  /* contact section styles */
+}
+
+/* Footer */
+footer {
+  /* footer styles */
+}
