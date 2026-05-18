@@ -39,9 +39,9 @@ header {
   font-family: 'Plus Jakarta Sans', sans-serif;
   position: relative;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   font-weight: 500;
-  color: #231e1c;             /* Elegant, soft charcoal brown instead of stark black */
+  color: #1a1311;             /* Elegant, soft charcoal brown instead of stark black */
   letter-spacing: 0.5px;       /* Gives a high-end, clean editorial look */
   transition: color 0.2s ease; /* Smooth fade when hovered */
 }
@@ -64,7 +64,7 @@ header {
 
 }
 .left-section nav a:hover {
-  color: #CD7F55;             /* Highlights to your rich latte tone when hovered */
+  color: #5a4f4a;             /* Highlights to your rich latte tone when hovered */
 }
 
 .left-section {
@@ -79,7 +79,7 @@ header {
 }
 .right-section .subtitle {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.8rem;          
+  font-size: 0.75rem;          
   font-weight: 600;           
   text-transform: uppercase;  
   letter-spacing: 2px;        
@@ -195,13 +195,16 @@ p {
 /* About */
 .about,
 #about {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
   min-height: 500px;
-  background: #ffecc6;
+  background-color: #FDF1d6;
+  padding: 60px 40px;
   gap: 30px;
   /* about section styles */
+}
+.feautre-card {
+  background-color: #ffffff; /* Crisp white cards pop beautifully off the cream */
+  padding: 24px;
+  border-radius: 12px;
 }
 .features-image-slideshow {
     display: flex;
@@ -211,8 +214,13 @@ p {
 
 }
 .container.grid-3 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1200;
+    margin: 0 auto;
     
 }
 
