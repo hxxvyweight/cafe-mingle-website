@@ -1,50 +1,91 @@
+/* ==========================================
+   1. GLOBAL RESETS & TYPOGRAPHY
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FDF1d6;
+    color: #1a1311;
+    font-family: 'Inter', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
-/* Header */
 
+h1, h2, h3, .logo, strong {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2C2523;
+}
+
+/* ==========================================
+   2. REUSABLE UTILITIES & GRIDS
+   ========================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ==========================================
+   3. HEADER & NAVIGATION
+   ========================================== */
 header {
-  /* header styles */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100px;
-  background-color: #FDF1d6;
-  color: #2C2523;
-  position: sticky;
-  top: 0;
-  
-  z-index: 1000; 
-  
-  background-color: rgba(253, 241, 214, 0.9); 
-  
-  backdrop-filter: blur(8px); 
-  -webkit-backdrop-filter: blur(8px); 
-  
-  border-bottom: 1px solid rgba(28, 21, 18, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: rgba(253, 241, 214, 0.9); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    border-bottom: 1px solid rgba(28, 21, 18, 0.05);
+}
 
+.left-section, .right-section {
+    flex: 1; 
 }
+
 .left-section nav {
-  display: flex;
-  gap: 20px; /* Adds clean spacing between About, Highlights, and Find Us */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
+
 .left-section nav a {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  position: relative;
-  text-decoration: none;
-  font-size: 0.90rem;
-  font-weight: 500;
-  color: #1a1311;             /* Elegant, soft charcoal brown instead of stark black */
-  letter-spacing: 0.5px;       /* Gives a high-end, clean editorial look */
-  transition: color 0.2s ease; /* Smooth fade when hovered */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+    font-size: 0.90rem;
+    font-weight: 500;
+    color: #1a1311;             
+    letter-spacing: 0.5px;       
+    transition: color 0.2s ease; 
 }
+
 .left-section nav a::after {
     content: '';
     position: absolute; 
@@ -61,40 +102,10 @@ header {
 .left-section nav a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
 }
+
 .left-section nav a:hover {
-  color: #5a4f4a;             /* Highlights to your rich latte tone when hovered */
-}
-
-.left-section {
-  display: flex;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 500;
-  color: #1c1512;
-  justify-content: center;
-}
-.left-section, .right-section {
-  flex: 1; 
-}
-.right-section .subtitle {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.75rem;          
-  font-weight: 600;           
-  text-transform: uppercase;  
-  letter-spacing: 2px;        
-  color: #5a4f4a;             
-}
-.right-section {
-  display: flex;
-  text-align: right;
-  justify-content: center;
-}
-
-.right-section .subtitle {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 500;
-  color: #1c1512;
+    color: #5a4f4a;             
 }
 
 .logo {
@@ -104,149 +115,111 @@ header {
     font-family: 'DM Serif Display', serif;
     letter-spacing: 6px;
     font-weight: 700;
-    flex: 0 0 auto;
-    text-align: center;
     font-size: 2rem;
     color: #1c1512;
 }
 
-/* Navigation */
-nav {
-  /* navigation styles */
-  display: flex;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  text-decoration: none;
-  color: inherit;
-
-}
-.subtitle {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-/* Hero / Banner */
-.hero,
-.banner {
+.right-section {
     display: flex;
-    background: #C89D7C;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
-    min-height: 350px;
 }
 
+.right-section .subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.75rem;          
+    font-weight: 600;           
+    text-transform: uppercase;  
+    letter-spacing: 2px;        
+    color: #5a4f4a;             
+}
+
+/* ==========================================
+   4. HERO SECTION
+   ========================================== */
 .hero {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;    /* Centers the text boxes horizontally */
-  text-align: center;     /* Centers the actual text lines */
-  padding: 40px;
-  background: #CD7F55;
-}
-.hero h1 {
+    min-height: 90vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;    
     justify-content: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;     
+    padding: 60px 40px;
+    background: #CD7F55;
+    color: white;
+}
+.hero-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
     font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: -1px;
     line-height: 1.2;
-    gap: 50px;
-    margin-bottom: 20px;
+    margin: 20px 0;
     color: white;
 }
-.container.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .container.hero-content p {
     font-weight: 550;
+    max-width: 600px;
+    margin: 0 auto;
 }
-h3 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.75rem;
-    color: #2C2523;
-}
-p {
-    font-family: 'Inter', sans-serif;
-}
+
 .btn {
+    display: inline-block;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: rgb(255, 243, 243);
     font-weight: 600;
-    padding: 12px;
-    opacity: 1;
+    padding: 12px 24px;
     background-color: #1a1311;  
     color: #FDF1D6;
-    margin-top: 15px;
+    margin-top: 25px;
     letter-spacing: 0.5px;
     font-size: 0.95rem;
-
-    transition: opacity 2.5s ease-out;
+    border-radius: 6px;
+    transition: color 0.2s ease-out, background-color 0.2s ease;
 }
+
 .btn:hover {
-  color: #ffdabc;
-  transition: color 0.2s ease-out; 
+    color: #ffffff;
+    background-color: #2c201c;
 }
 
-/* About */
-.about,
-#about {
-  min-height: 500px;
-  background-color: #FDF1d6;
-  padding: 60px 40px;
-  gap: 30px;
-  /* about section styles */
+/* ==========================================
+   5. ABOUT & FEATURES SECTION
+   ========================================== */
+.features-section {
+    background-color: #FDF1d6;
+    padding: 80px 0;
+    scroll-margin-top: 100px;
 }
+
 .feature-card {
-  background-color: #ffffff; 
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #5a4f4a;
+    line-height: 1.5;
+}
+
 .feature-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
-.features-image-slideshow {
-    display: flex;
-    justify-content: space-around;
-    min-width: 600px;
-    min-height: 200px;
 
-}
-.container {
-    max-width: 1200px; /* Restricts the layout size nicely */
-    margin-left: auto;  /* Centers the box horizontally */
-    margin-right: auto; /* Centers the box horizontally */
-    width: 100%;
-}
-.container.grid-3 {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
-    max-width: 1200;
-    margin: 0 auto;
-    
-}
-/* Instagram Photo Gallery Grid */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px;                             
-    margin-top: 50px;                      
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
 }
 
 .gallery-item {
@@ -264,39 +237,46 @@ p {
     display: block;
 }
 
-/* Subtle hover pop effect for the images */
 .gallery-item:hover {
     transform: scale(1.02);                
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-#menu-highlights {
+/* ==========================================
+   6. MENU HIGHLIGHTS SECTION
+   ========================================== */
+.menu-highlights {
     background-color: #FDF1d6; 
-    padding: 60px 40px;
+    padding: 80px 0;
+    scroll-margin-top: 100px;
 }
 
-
-#menu-highlights .container .grid-2 {
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px;                             
-    margin-top: 40px;                      
-}
-.menu-highlights .container .grid-2 img {
-    max-height: 450px;    
-    object-fit: contain;  
+.section-title {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1c1512;
+    margin-bottom: 10px;
 }
 
+.section-subtitle {
+    text-align: center;
+    color: #5a4f4a;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
 
 .menu-item {
     background-color: #ffffff;             
-    padding: 30px;
+    padding: 35px;
     border-radius: 12px;                   
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item h3 {
+    font-size: 1.5rem;
     margin-bottom: 12px;                   
 }
 
@@ -304,18 +284,67 @@ p {
     line-height: 1.6;                      
     color: #4a3f3b;                        
 }
+
 .menu-item img {
-    width: 450px;
+    width: 100%;
     height: 360px;
-}
-.menu-split-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px;                             
-    margin-top: 40px;                      
-    align-items: start;                    
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-top: auto; /* Pushes the image nicely to the bottom of the card */
+    padding-top: 20px;
 }
 
+/* ==========================================
+   7. INFO / VISIT US SECTION
+   ========================================== */
+.info-section {
+    background: #CD7F55;
+    padding: 80px 0;
+    color: white;
+    scroll-margin-top: 100px;
+}
+
+.visit-us h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-layout {
+    align-items: center;
+}
+
+.text-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+
+.info-detail strong, .info-trading-hours strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.mock-map {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   8. FOOTER
+   ========================================== */
 footer {
     background-color: #1a1311;
     color: #FDF1D6;
@@ -336,55 +365,22 @@ footer .instagram-link {
 footer .instagram-link:hover {
     color: #ffffff;
 }
-.section-title {
-    font-family: 'DM Serif Display', serif;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1c1512;
-    margin-bottom: 10px;
-}
 
-.section-subtitle {
-    text-align: center;
-    color: #5a4f4a;
-    font-size: 1.1rem;
-}
+/* ==========================================
+   9. MOBILE RESPONSIVENESS (SEO REQUIRED)
+   ========================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+    
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr; /* Forces everything to stack on small screens */
+    }
 
-.container.grid-2 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.info-section {
-
-    background: #CD7F55;
-}
-.info-block {
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-    color: white;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-
-}
-.visit-us {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: white;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-.info-block.map-placeholder {
-    display: flex;
-    justify-content: center;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-.contact,
-#contact {
-  /* contact section styles */
-}
-
-/* Footer */
-footer {
-  /* footer styles */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
 }
