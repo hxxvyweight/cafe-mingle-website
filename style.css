@@ -156,12 +156,16 @@ nav {
     line-height: 1.2;
     gap: 50px;
     margin-bottom: 20px;
+    color: white;
 }
 .container.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.container.hero-content p {
+    font-weight: 550;
 }
 h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
