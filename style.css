@@ -16,7 +16,7 @@ header {
   justify-content: space-around;
   align-items: center;
   min-height: 100px;
-  background: #ffecc6;
+  background-color: #FDF1d6;
   color: #2C2523;
   position: sticky;
   top: 0;
@@ -201,10 +201,16 @@ p {
   gap: 30px;
   /* about section styles */
 }
-.feautre-card {
-  background-color: #ffffff; /* Crisp white cards pop beautifully off the cream */
+.feature-card {
+  background-color: #ffffff; 
   padding: 24px;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 .features-image-slideshow {
     display: flex;
