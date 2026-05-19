@@ -15,112 +15,117 @@
 
     <header>
         <div class="left-section">
-            <nav>
+            <nav aria-label="Main Navigation">
                 <a href="#about">About</a>
                 <a href="#menu-highlights">Highlights</a>
                 <a href="#info">Find Us</a>
             </nav>
         </div>
-        <div class="logo"><a href="#">Cafe Mingle</a></div>
+        <div class="logo"><a href="#" aria-label="Cafe Mingle Home">Cafe Mingle</a></div>
         <div class="right-section">
             <span class="subtitle">Korean-Inspired Cafe | 한국풍 카페</span>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <img src="coffee.webp" alt="Cafe Mingle Specialty Coffee Cup">
-            <h1>Warm, Simple & Full of Flavour</h1>
-            <p>Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.</p>
-            <a href="#info" class="btn">View Opening Hours</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <img src="coffee.webp" alt="Cafe Mingle Specialty Coffee Cup" width="600" height="400" fetchpriority="high">
+                <h1 id="hero-title">Warm, Simple & Full of Flavour</h1>
+                <p>Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.</p>
+                <a href="#info" class="btn">View Opening Hours</a>
+            </div>
+        </section>
 
-    <section id="about" class="features-section">
-        <div class="container grid-3">
-            <div class="feature-card">
-                <h3>Cozy Brunch</h3>
-                <p>A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Easy Parking</h3>
-                <p>No stress needed. We have a convenient parking lot located right nearby.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Pet Friendly</h3>
-                <p>Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
-            </div>
-        </div>
-        
-        <div class="container grid-3 gallery-grid">
-            <div class="gallery-item">
-                <img src="insta1.avif" alt="Cafe Mingle delicious dessert specialty">
-            </div>
-            <div class="gallery-item">
-                <img src="insta2.avif" alt="Cozy specialty coffee latte art">
-            </div>
-            <div class="gallery-item">
-                <img src="insta3.avif" alt="Bright fruit tea and signature treats">
-            </div>
-        </div>
-    </section>
-
-    <section id="menu-highlights" class="menu-highlights">
-        <div class="container">
-            <h2 class="section-title">Sweet Highlights</h2>
-            <p class="section-subtitle">A glimpse at our signature, house-made treats</p>
+        <section id="about" class="features-section" aria-labelledby="about-title">
+            <h2 id="about-title" class="sr-only">Why Choose Cafe Mingle</h2>
             
-            <div class="grid-2">
-                <div class="menu-item">
-                    <h3>Signature Dessert Boxes</h3>
-                    <p>Perfect for gifting or treating yourself. Includes our soft & rich chocolate cookies, crispy butter cookies, bright fruit teas, and creamy strawberry panna cotta.</p>
-                    <img src="food1.jpg" alt="Cafe Mingle Signature Chocolate and Butter Cookie Dessert Box">
-                </div>
+            <div class="container grid-3">
+                <article class="feature-card">
+                    <h3>Cozy Brunch</h3>
+                    <p>A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Easy Parking</h3>
+                    <p>No stress needed. We have a convenient parking lot located right nearby.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Pet Friendly</h3>
+                    <p>Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
+                </article>
+            </div>
+            
+            <div class="container grid-3 gallery-grid">
+                <figure class="gallery-item">
+                    <img src="insta1.avif" alt="Cafe Mingle delicious dessert specialty" loading="lazy" width="400" height="400">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="insta2.avif" alt="Cozy specialty coffee latte art" loading="lazy" width="400" height="400">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="insta3.avif" alt="Bright fruit tea and signature treats" loading="lazy" width="400" height="400">
+                </figure>
+            </div>
+        </section>
+
+        <section id="menu-highlights" class="menu-highlights" aria-labelledby="menu-title">
+            <div class="container">
+                <h2 id="menu-title" class="section-title">Sweet Highlights</h2>
+                <p class="section-subtitle">A glimpse at our signature, house-made treats</p>
                 
-                <div class="menu-item">
-                    <h3>Korean-Inspired Treats</h3>
-                    <p>Unique flavors crafted with care, blending traditional inspiration with classic local brunch favorites.</p>
-                    <img src="food1.jpg" alt="Korean-Inspired Bulgogi Rice Bowl Lunch Special">
+                <div class="grid-2">
+                    <article class="menu-item">
+                        <h3>Signature Dessert Boxes</h3>
+                        <p>Perfect for gifting or treating yourself. Includes our soft & rich chocolate cookies, crispy butter cookies, bright fruit teas, and creamy strawberry panna cotta.</p>
+                        <img src="food1.jpg" alt="Cafe Mingle Signature Chocolate and Butter Cookie Dessert Box" loading="lazy" width="500" height="360">
+                    </article>
+                    
+                    <article class="menu-item">
+                        <h3>Korean-Inspired Treats</h3>
+                        <p>Unique flavors crafted with care, blending traditional inspiration with classic local brunch favorites.</p>
+                        <img src="food1.jpg" alt="Korean-Inspired Bulgogi Rice Bowl Lunch Special" loading="lazy" width="500" height="360">
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="info" class="info-section">
-        <div class="visit-us">
-            <h2>Visit Us</h2>
-        </div>
-        
-        <div class="container grid-2 info-layout">
-            <div class="info-block text-details">
-                <div class="info-detail">
-                    <strong>📍 Location</strong>
-                    <p>3/55 Central Ave, Oak Flats NSW</p>
-                </div>
-                <div class="info-trading-hours">
-                    <strong>⏰ Trading Hours</strong>
-                    <p>Tuesday to Saturday: 7:30am – 4:30pm<br><em>Closed Sunday & Monday</em></p>
-                </div>
+        <section id="info" class="info-section" aria-labelledby="visit-title">
+            <div class="visit-us">
+                <h2 id="visit-title">Visit Us</h2>
             </div>
             
-            <div class="info-block map-placeholder">
+            <div class="container grid-2 info-layout">
+                <address class="info-block text-details">
+                    <div class="info-detail">
+                        <strong>📍 Location</strong>
+                        <p>3/55 Central Ave, Oak Flats NSW</p>
+                    </div>
+                    <div class="info-trading-hours">
+                        <strong>⏰ Trading Hours</strong>
+                        <p>Tuesday to Saturday: 7:30am – 4:30pm<br><em>Closed Sunday & Monday</em></p>
+                    </div>
+                </address>
+                
+                <div class="info-block map-placeholder">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13141.662613833776!2d150.8027956!3d-34.56834784999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b131304aad69f17%3A0x2c06c0b65c8d2ad2!2sCafe%20mingle!5e0!3m2!1sen!2sau!4v1779105784643!5m2!1sen!2sau" 
                         width="600" 
                         height="450" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps location for Cafe Mingle">
                     </iframe>                
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>2026 Cafe Mingle. Made with care.</p>
-            <p><a href="https://instagram.com/cafe_mingle_" target="_blank" class="instagram-link" aria-label="Follow Cafe Mingle on Instagram">Follow our journey on Instagram @cafe_mingle_</a>        </div>
+            <p>&copy; 2026 Cafe Mingle. Made with care.</p>
+            <p><a href="https://instagram.com/cafe_mingle_" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow Cafe Mingle on Instagram">Follow our journey on Instagram @cafe_mingle_</a></p>
+        </div>
     </footer>
 
 </body>

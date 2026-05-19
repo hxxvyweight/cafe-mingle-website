@@ -384,3 +384,24 @@ footer .instagram-link:hover {
         font-size: 2.5rem;
     }
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Resets the default browser styling for the new HTML5 tags */
+address {
+    font-style: normal; /* Browsers italicize <address> by default */
+}
+
+figure {
+    margin: 0; /* Browsers add weird margins to <figure> by default */
+}
