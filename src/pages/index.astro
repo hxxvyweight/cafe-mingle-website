@@ -1,36 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Visit Cafe Mingle in Oak Flats. Your local cozy spot for specialty treats, bright fruit teas, beautiful dessert boxes, and Korean-inspired brunch.">
-    <title>Cafe Mingle | Korean-Inspired Cafe Oak Flats</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@600;800&display=swap" rel="stylesheet">
-</head>
-<body>
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Cafe Mingle | Home">
 
-    <header>
-        <div class="left-section">
-            <nav aria-label="Main Navigation">
-                <a href="#about">About</a>
-                <a href="#menu-highlights">Highlights</a>
-                <a href="#info">Find Us</a>
-            </nav>
-        </div>
-        <div class="logo"><a href="#" aria-label="Cafe Mingle Home">Cafe Mingle</a></div>
-        <div class="right-section">
-            <span class="subtitle">Korean-Inspired Cafe | 한국풍 카페</span>
-        </div>
-    </header>
 
     <main>
         <section class="hero" aria-labelledby="hero-title">
             <div class="container hero-content">
-                <img src="coffee.webp" alt="Cafe Mingle Specialty Coffee Cup" width="600" height="400" fetchpriority="high">
+                <img src="/coffee.webp" alt="Cafe Mingle Specialty Coffee Cup" width="600" height="400" fetchpriority="high">
                 <h1 id="hero-title">Warm, Simple & Full of Flavour</h1>
                 <p>Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.</p>
                 <a href="#info" class="btn">View Opening Hours</a>
@@ -39,7 +16,6 @@
 
         <section id="about" class="features-section" aria-labelledby="about-title">
             <h2 id="about-title" class="sr-only">Why Choose Cafe Mingle</h2>
-            
             <div class="container grid-3">
                 <article class="feature-card">
                     <h3>Cozy Brunch</h3>
@@ -54,16 +30,15 @@
                     <p>Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
                 </article>
             </div>
-            
             <div class="container grid-3 gallery-grid">
                 <figure class="gallery-item">
-                    <img src="insta1.avif" alt="Cafe Mingle delicious dessert specialty" loading="lazy" width="400" height="400">
+                    <img src="/insta1.avif" alt="Cafe Mingle delicious dessert specialty" loading="lazy" width="400" height="400">
                 </figure>
                 <figure class="gallery-item">
-                    <img src="insta2.avif" alt="Cozy specialty coffee latte art" loading="lazy" width="400" height="400">
+                    <img src="/insta2.avif" alt="Cozy specialty coffee latte art" loading="lazy" width="400" height="400">
                 </figure>
                 <figure class="gallery-item">
-                    <img src="insta3.avif" alt="Bright fruit tea and signature treats" loading="lazy" width="400" height="400">
+                    <img src="/insta3.avif" alt="Bright fruit tea and signature treats" loading="lazy" width="400" height="400">
                 </figure>
             </div>
         </section>
@@ -72,18 +47,14 @@
             <div class="container">
                 <h2 id="menu-title" class="section-title">Sweet Highlights</h2>
                 <p class="section-subtitle">A glimpse at our signature, house-made treats</p>
-                
                 <div class="grid-2">
                     <article class="menu-item">
                         <h3>Signature Dessert Boxes</h3>
                         <p>Perfect for gifting or treating yourself. Includes our soft & rich chocolate cookies, crispy butter cookies, bright fruit teas, and creamy strawberry panna cotta.</p>
-                        <!-- <img src="food1.jpg" alt="Cafe Mingle Signature Chocolate and Butter Cookie Dessert Box" loading="lazy" width="500" height="360"> -->
                     </article>
-                    
                     <article class="menu-item">
                         <h3>Korean-Inspired Treats</h3>
                         <p>Unique flavors crafted with care, blending traditional inspiration with classic local brunch favorites.</p>
-                        <!-- <img src="food1.jpg" alt="Korean-Inspired Bulgogi Rice Bowl Lunch Special" loading="lazy" width="500" height="360"> -->
                     </article>
                 </div>
             </div>
@@ -93,34 +64,26 @@
             <div class="visit-us">
                 <h2 id="visit-title">Visit Us</h2>
             </div>
-            
             <div class="container grid-2 info-layout">
                 <address class="info-block text-details">
                     <div class="info-detail">
-                        <strong>📍 Location</strong>
+                        <h1>📍 Location</h1>
                         <p>3/55 Central Ave, Oak Flats NSW</p>
                     </div>
                     <div class="info-trading-hours">
-                        <strong>⏰ Trading Hours</strong>
+                        <h1>⏰ Trading Hours</h1>
                         <p>Tuesday to Saturday: 7:30am – 4:30pm<br><em>Closed Sunday & Monday</em></p>
                     </div>
                 </address>
-                
                 <div class="info-block map-placeholder">
-                    <a href="https://maps.google.com/?q=3/55+Central+Ave,+Oak+Flats+NSW" target="_blank" rel="noopener noreferrer" aria-label="Open Cafe Mingle on Google Maps">
-                <img src="map-preview.webp" alt="Map location of Cafe Mingle in Oak Flats" width="600" height="450" loading="lazy" style="border-radius: 12px; width: 100%; height: auto;">
-    </a>
-</div>
+                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Open Cafe Mingle on Google Maps">
+                        <img src="/map-preview.webp" alt="Map location of Cafe Mingle in Oak Flats" width="600" height="450" loading="lazy" style="border-radius: 12px; width: 100%; height: auto;">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>2026 Cafe Mingle. Made with care.</p>
-            <p><a href="https://instagram.com/cafe_mingle_" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow Cafe Mingle on Instagram">Follow our journey on Instagram @cafe_mingle_</a></p>
-        </div>
-    </footer>
 
-</body>
-</html>
+
+</Layout>

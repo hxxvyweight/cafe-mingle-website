@@ -1,0 +1,38 @@
+---
+import '../styles/style.css';
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <nav aria-label="Main Navigation">
+                <a href="/">Home</a>
+                <a href="/#about">About</a>
+                <a href="/#info">Find Us</a>
+                <a href="/menu">Menu</a>
+            </nav>
+        </div>
+        <div class="logo"><a href="/" aria-label="Cafe Mingle Home">Cafe Mingle</a></div>
+        <div class="right-section">
+            <span class="subtitle">Korean-Inspired Cafe | 한국풍 카페</span>
+        </div>
+    </header>
+
+    <slot />
+
+    <footer>
+        <div class="container">
+            <p>2026 Cafe Mingle. Made with care.</p>
+            <p><a href="https://instagram.com_" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow Cafe Mingle on Instagram">Follow our journey on Instagram @cafe_mingle_</a></p>
+        </div>
+    </footer>
+</body>
+</html>

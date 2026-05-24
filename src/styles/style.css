@@ -300,11 +300,17 @@ header {
     margin-top: auto; /* Pushes the image nicely to the bottom of the card */
     padding-top: 20px;
 }
+.menu-heading {
+    padding: 40px;
+}
 
 /* ==========================================
    7. INFO / VISIT US SECTION
    ========================================== */
 .info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #CD7F55;
     padding: 80px 0;
     color: white;
@@ -411,4 +417,40 @@ address {
 
 figure {
     margin: 0; /* Browsers add weird margins to <figure> by default */
+}
+.menu-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.container-menu img {
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    width: 1200px;
+    border-radius: 40px;
+}
+.menu-footer-notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+.tap-text {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.responsive-menu {
+  width: 100%;       
+  max-width: 1000px;  
+  height: auto;      
+  border-radius: 12px;
 }
