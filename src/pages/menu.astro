@@ -1,29 +1,52 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import Menu from '../assets/menu.webp';
+import MenuTwo from '../assets/menu2.webp';
 ---
+<Layout title="Cafe Mingle | Korean-Inspired Cafe">
+  
+  <!-- HEADER & NAVIGATION -->
+  <header class="w-full max-w-6xl mx-auto px-6 py-10 flex flex-col-reverse md:flex-row justify-between items-center md:items-center gap-6">
+    <nav class="flex flex-wrap gap-6 text-sm font-semibold text-stone-600 tracking-wide uppercase">
+      <a href="/" class="hover:text-[#533A2F] transition-colors">Home</a>
+      <a href="#about" class="hover:text-[#533A2F] transition-colors">About</a>
+      <a href="/find-us" class="hover:text-[#533A2F] transition-colors">Find Us</a>
+      <a href="/menu" class="hover:text-[#533A2F] transition-colors">Menu</a>
+    </nav>
+    <div class="text-left md:text-right">
+      <h2 class="text-2xl font-bold tracking-widest text-stone-900 uppercase">Cafe Mingle</h2>
+      <p class="text-xs text-stone-500 tracking-widest uppercase mt-1">Korean-Inspired Cafe | 한국풍 카페</p>
+    </div>
+  </header>
 
-<Layout title="Menu | Cafe Mingle Oak Flats">
-    
-    <div class="menu-heading">
-        <h1>Our Menu</h1>
+  <section class="w-full max-w-screen min-h-[90vh] mx-auto px-8 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2  gap-8 md:items-center md:text-center ">
+
+    <div class="w-full">
+        <Image src= { Menu } alt="Menu Image 1" class="zoom-img rounded-2xl w-full object-cover h-auto transition-all duration-300 cursor-zoom-in" loading="eager"/>
+
     </div>
     
-    <main class="menu-page-container">
-        <section class="container-menu">
-            <a href="/menu.webp" target="_blank">
-                <img src="/menu.webp" alt="Cafe Mingle Menu" width=500 height=700 class="responsive-menu" />
-            </a>
-            <p class="tap-text">👆 Tap menu to zoom or view full size</p>     
-           
-            <a href="/menu2.webp" target="_blank">
-                <img src="/menu2.webp" alt="Cafe Mingle Menu" width=500 height=700 class="responsive-menu" />
-            </a>
-            <p class="tap-text">👆 Tap menu to zoom or view full size</p>     
-        </section>
-    </main>
+    <div class="w-full">
+        <Image src={ MenuTwo }  alt="Menu Image 2" class="zoom-img rounded-2xl w-full object-cover h-auto transition-all duration-300 cursor-zoom-in" loading="eager"/>
 
-    <div class="menu-footer-notice">
-        <p>Notice an item missing? Since our kitchen rotates seasonal treats, ask our friendly counter staff about daily cabinet specials!</p>
     </div>
+    
+  
+  </section>
+
+  <section class="w-full max-w-6xl mx-auto px-6 py-16">
+    
+  </section>
 
 </Layout>
+
+<script>
+    const img = document.querySelectorAll('.zoom-img');
+    
+    img.forEach(img => {
+        img.addEventListener('click', () => {
+            img.classList.toggle('zoomed');
+        });
+    });
+</script>

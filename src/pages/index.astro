@@ -1,89 +1,140 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breakfast from '../assets/BigBreakfast.webp';
+import { Image } from 'astro:assets';
+import Beans from '../assets/belaroma.webp';
+import Food from '../assets/food2.webp';
+import Menu from '../assets/menu.webp';
+import Coffee from '../assets/CoffeeFull.webp';
+import beanIcon from '../assets/coffeeBean.svg';
+import CoffeeIcon from '../assets/coffee.svg';
+import Dog from '../assets/dog.svg';
+import Drinks from '../assets/drinks.webp';
+import FoodTwo from '../assets/food3.webp';
+import FoodThree from  '../assets/food.webp';
+
+
 ---
-<Layout title="Cafe Mingle | Home">
 
+<Layout title="Cafe Mingle | Korean-Inspired Cafe">
+  
+  <header class="w-full max-w-6xl mx-auto px-6 py-10">
+    <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-stone-600 tracking-wide uppercase">
+        <a href="/" class="hover:text-[#533A2F] transition-colors nav-animate">Home</a>
+        <a href="#about" class="hover:text-[#533A2F] transition-colors nav-animate">About</a>
+        <a href="/find-us" class="hover:text-[#533A2F] transition-colors nav-animate">Find Us</a>
+        <a href="/menu" class="hover:text-[#533A2F] transition-colors nav-animate">Menu</a>
+      </nav>
+      <div class="text-left md:text-right">
+        <h2 class="text-2xl font-bold tracking-widest text-stone-900 uppercase">Cafe Mingle</h2>
+        <p class="text-xs text-stone-500 tracking-widest uppercase mt-1">Korean-Inspired Cafe | 한국풍 카페</p>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="container hero-content">
-                <img src="/coffee.webp" alt="Cafe Mingle Specialty Coffee Cup" width="600" height="400" fetchpriority="high">
-                <h1 id="hero-title">Warm, Simple & Full of Flavour</h1>
-                <p>Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.</p>
-                <a href="#info" class="btn">View Opening Hours</a>
-            </div>
-        </section>
+  <main class="bg-[#CD7F55] w-full min-h-[90vh] py-12 md:py-20">
+    <div class="w-full max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+      
+      <div class="w-64 h-64 mb-12 rounded-full bg-[#533A2F] shadow-xl flex items-center justify-center p-4 border-8 border-white/50">
+         <img src="/coffee.webp" alt="Cafe Mingle Logo" class="w-full h-full object-contain max-w-full" />
+      </div>
 
-        <section id="about" class="features-section" aria-labelledby="about-title">
-            <h2 id="about-title" class="sr-only">Why Choose Cafe Mingle</h2>
-            <div class="container grid-3">
-                <article class="feature-card">
-                    <h3>Cozy Brunch</h3>
-                    <p>A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Easy Parking</h3>
-                    <p>No stress needed. We have a convenient parking lot located right nearby.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Pet Friendly</h3>
-                    <p>Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
-                </article>
-            </div>
-            <div class="container grid-3 gallery-grid">
-                <figure class="gallery-item">
-                    <img src="/insta1.avif" alt="Cafe Mingle delicious dessert specialty" loading="lazy" width="400" height="400">
-                </figure>
-                <figure class="gallery-item">
-                    <img src="/insta2.avif" alt="Cozy specialty coffee latte art" loading="lazy" width="400" height="400">
-                </figure>
-                <figure class="gallery-item">
-                    <img src="/insta3.avif" alt="Bright fruit tea and signature treats" loading="lazy" width="400" height="400">
-                </figure>
-            </div>
-        </section>
+      <h1 class="text-4xl md:text-6xl font-black text-stone-800 tracking-tight mb-6">
+        Warm, Simple & Full of Flavour
+      </h1>
+      <p class="text-lg text-stone-900 font-medium leading-relaxed mb-10 max-w-2xl tracking-wide">
+        Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.
+      </p>
 
-        <section id="menu-highlights" class="menu-highlights" aria-labelledby="menu-title">
-            <div class="container">
-                <h2 id="menu-title" class="section-title">Sweet Highlights</h2>
-                <p class="section-subtitle">A glimpse at our signature, house-made treats</p>
-                <div class="grid-2">
-                    <article class="menu-item">
-                        <h3>Signature Dessert Boxes</h3>
-                        <p>Perfect for gifting or treating yourself. Includes our soft & rich chocolate cookies, crispy butter cookies, bright fruit teas, and creamy strawberry panna cotta.</p>
-                    </article>
-                    <article class="menu-item">
-                        <h3>Korean-Inspired Treats</h3>
-                        <p>Unique flavors crafted with care, blending traditional inspiration with classic local brunch favorites.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="flex gap-4 items-center justify-center">
+      
+        <div class="flex flex-col items-center gap-4 justify-between flex-wrap">
+        <p class="italic px-8 py-4 text-white font-bold tracking-wide rounded-lg nav-animate">
+          Order Online Via
+        </p>
+        <div class="flex gap-8">
+          <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
+          <img src="/doordash.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
+          </a>
+          <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
+        </a>
+      </div>
+      </div>
+        
+        
+      </div>
+    
+    </div>
+  </main>
 
-        <section id="info" class="info-section" aria-labelledby="visit-title">
-            <div class="visit-us">
-                <h2 id="visit-title">Visit Us</h2>
-            </div>
-            <div class="container grid-2 info-layout">
-                <address class="info-block text-details">
-                    <div class="info-detail">
-                        <h1>📍 Location</h1>
-                        <p>3/55 Central Ave, Oak Flats NSW</p>
-                    </div>
-                    <div class="info-trading-hours">
-                        <h1>⏰ Trading Hours</h1>
-                        <p>Tuesday to Saturday: 7:30am – 4:30pm<br><em>Closed Sunday & Monday</em></p>
-                    </div>
-                </address>
-                <div class="info-block map-placeholder">
-                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" aria-label="Open Cafe Mingle on Google Maps">
-                        <img src="/map-preview.webp" alt="Map location of Cafe Mingle in Oak Flats" width="600" height="450" loading="lazy" style="border-radius: 12px; width: 100%; height: auto;">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+  <section class="w-full max-w-[90vw] mx-auto px-6 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-stone-800 mb-10 border-b-2 border-[#533A2F]/20 pb-4 inline-block">
+      Why Choose Cafe Mingle
+    </h2>
 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Cozy Brunch</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
+        <Image src={ beanIcon } alt="SVG Icon of Coffee Cup" class="w-18 h-auto"/>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50 ">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Easy Parking</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">No stress needed. We have a convenient parking lot located right nearby.</p>
+        <Image src={ CoffeeIcon } alt="SVG Icon of Coffee Cup" class="w-18 h-auto"/>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Pet Friendly</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
+        <Image src={ Dog } alt="SVG Icon of Coffee Cup" class="w-18 h-auto"/>
+      </div>
+    </div>
+  </section>
 
+  <section id="about"class="bg-[#1a1311] w-full min-h-[95vh] py-12 md:py-20">
+    <div class="w-full max-w-6xl mx-auto px-6 flex flex-col justify-between items-center text-center">
+      
+      <h1 class="text-4xl md:text-6xl font-black text-zinc-100 tracking-tight mb-6">
+        About Us
+      </h1>
+      <p class="text-lg text-zinc-100 font-medium leading-relaxed">Welcome to Cafe Mingle, where Korean hospitality meets the perfect cup of coffee. We are passionate about creating a cozy space in the heart of 
+        Oak Flats where friends and family can gather, relax, and enjoy a unique blend of flavors.
+        We take great pride in the quality of our brew, which is why we exclusively serve premium Belaroma coffee beans. Whether you are stopping by for your morning caffeine fix or settling in for a delicious treat, we look forward to welcoming you into our cafe.
+      </p>
+      
+    </div>
 
+    <div class="grid md:grid-cols-1 px-8 py-16 place-items-center justify-center gap-4">
+      <div class="flex flex-col gap-8 items-center h-[70vh]">
+      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2">Proud to Serve High Quality Belaroma Coffee Beans<span class="text-sm self-center">Try clicking the photo!</span></p>
+      <a href="https://www.sevenmiles.com.au/products/belaroma-range?srsltid=AfmBOooW_US_i8oRv4VMdEGwzImZqiDoiDdapojE2kdGvJD0c6JRVND3">
+      <Image src={ Beans } alt="Belaroma Coffee Beans" class="w-full max-h-120 rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      </a>
+      </div>
+      
+      <div class="flex flex-col gap-8 items-center h-[70vh]">
+      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2 items-center">Discover Our Menu<span class="text-sm">To View our Menu, Click Below</span></p>
+      
+      <a href="/menu">
+      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-xl md:w-200 max-h-120 rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      </a>
+      </div>
+      <p class="text-3xl tracking-widest font-light  text-white mb-12 italic">Take a Sneek Peek at some Items!</p>
+      <div class="grid md:grid-cols-3 gap-8 items-center h-auto max-w-[80vw]">
+      <Image src={ Food } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out max-h-120"/>
+      <Image src={ Drinks } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out max-h-120"/>
+      <Image src={ FoodTwo } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out min-h-full"/>
+      <Image src={ FoodThree } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out max-h-120"/>
+      <Image src={ Coffee } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out max-h-120"/>
+      <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out min-h-full"/>
+      </div>
+    </div>
+        
+        
+    
+    </div>
+  </section>
 </Layout>

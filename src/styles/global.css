@@ -1,0 +1,49 @@
+/* 1. Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+/* 2. Inject Tailwind v4 (This replaces the old @tailwind base/components/utilities) */
+@import "tailwindcss";
+
+/* 3. Global Baseline Resets */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FDF1d6;
+    color: #1a1311;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, strong {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2C2523;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@theme {
+  --color-brand-red: #EB1700;
+}
+
+/* Custom shortcut class */
+.nav-animate {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-x-100;
+}
+
+
+  .zoomed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    object-fit: contain; /* Ensures the image doesn't stretch */
+    padding: 20px;
+    cursor: zoom-out;
+  }

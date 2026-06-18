@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Cafe Mingle | Korean-Inspired Cafe">
+  
+  <header class="w-full max-w-6xl mx-auto px-6 py-10">
+    <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+      <nav class="flex flex-wrap gap-6 text-sm font-semibold text-stone-600 tracking-wide uppercase">
+        <a href="/" class="hover:text-[#533A2F] transition-colors nav-animate">Home</a>
+        <a href="#about" class="hover:text-[#533A2F] transition-colors nav-animate">About</a>
+        <a href="/find-us" class="hover:text-[#533A2F] transition-colors nav-animate">Find Us</a>
+        <a href="/menu" class="hover:text-[#533A2F] transition-colors nav-animate">Menu</a>
+      </nav>
+      <div class="text-left md:text-right">
+        <h2 class="text-2xl font-bold tracking-widest text-stone-900 uppercase">Cafe Mingle</h2>
+        <p class="text-xs text-stone-500 tracking-widest uppercase mt-1">Korean-Inspired Cafe | 한국풍 카페</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-[#CD7F55] w-full min-h-[20vh] py-12 md:py-20">
+    <div class="w-full max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
+      
+      <div class="w-64 h-64 mb-12 rounded-full bg-[#533A2F] shadow-xl flex items-center justify-center p-4 border-8 border-white/50">
+         <img src="/coffee.webp" alt="Cafe Mingle Logo" class="w-full h-full object-contain max-w-full" />
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-black text-stone-800 tracking-tight mb-6">
+        Warm, Simple & Full of Flavour
+      </h1>
+      <p class="text-lg text-stone-900 font-medium leading-relaxed mb-10 max-w-2xl tracking-wide">
+        Your local cozy spot in Oak Flats for specialty treats, bright fruit teas, and beautiful dessert boxes.
+      </p>
+
+      <div class="flex gap-4 items-center justify-center">
+      
+        <div class="flex flex-col items-center gap-4 justify-between flex-wrap">
+        <p class="italic px-8 py-4 text-white font-bold tracking-wide rounded-lg nav-animate">
+          Order Online Via
+        </p>
+        <div class="flex gap-8">
+          <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
+          <img src="/doordash.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
+          </a>
+          <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
+        </a>
+      </div>
+      </div>
+        
+        
+      </div>
+    
+    </div>
+  </main>
+
+  <section class="w-full max-w-6xl mx-auto px-6 py-16 flex flex-col justify-center items-center">
+    <h2 class="text-2xl md:text-3xl font-bold text-stone-800 mb-10 border-b-2 border-[#533A2F]/20 pb-4 inline-block">
+      Where to Find Us
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white/60 p-8 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Cozy Brunch</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
+      </div>
+      <div class="bg-white/60 p-8 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Easy Parking</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">No stress needed. We have a convenient parking lot located right nearby.</p>
+      </div>
+      
+    </div>
+  </section>
+
+</Layout>

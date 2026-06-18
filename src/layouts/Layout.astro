@@ -1,40 +1,44 @@
 ---
-import '../styles/style.css';
+import '../styles/global.css';
 const { title } = Astro.props;
+import { Image } from 'astro:assets';
+import Instagram from '../assets/instagram.svg';
+import Facebook from '../assets/facebook.svg';
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <meta name="description" content="Welcome to Cafe Mingle, a Korean-inspired cafe serving specialty coffee and treats." />
-
-</head>
-<body>
-    <header>
-        <div class="left-section">
-            <nav aria-label="Main Navigation">
-                <a href="/">Home</a>
-                <a href="/#about">About</a>
-                <a href="/#info">Find Us</a>
-                <a href="/menu">Menu</a>
-            </nav>
-        </div>
-        <div class="logo"><a href="/" aria-label="Cafe Mingle Home">Cafe Mingle</a></div>
-        <div class="right-section">
-            <span class="subtitle">Korean-Inspired Cafe | 한국풍 카페</span>
-        </div>
-    </header>
-
+  </head>
+  <body class="bg-[#FDF1d6] text-stone-900 font-sans antialiased selection:bg-[#533A2F] selection:text-white max-w-screen">
     <slot />
 
-    <footer>
-        <div class="container">
-            <p>2026 Cafe Mingle. Made with care.</p>
-            <p><a href="https://instagram.com_" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow Cafe Mingle on Instagram">Follow our journey on Instagram @cafe_mingle_</a></p>
-        </div>
+    <footer class="min-h-[45vh] md:min-h-[70vh] flex justify-between items-start px-24 bg-[#533A2] text-center py-16">
+
+      <div class="flex flex-col">
+        <h1 class="font-sans text-4xl font-bold">Trading Hours </h1>
+        <p class="text-xl font-bold">Tuesday-Saturday</p>
+        <p class="">7:30 am - 5:30 pm</p>
+      </div>
+
+      <div>
+        <p class="text-4xl font-black">Don't Miss Out by following our Socials!</p>
+      </div>
+      
+      
+      <div class="max-h-auto max-w-auto flex gap-8 justify-center">
+        <a href="https://www.instagram.com/cafe_mingle_">
+        <Image src={ Instagram } alt="Instagram Logo SVG" class="h-auto w-15"/>
+        </a>
+        <a>
+        <Image src={ Facebook } alt="Instagram Logo SVG" class="h-auto w-15"/>
+        </a>
+      </div>
+
+      <div class="gridm       "
+
     </footer>
-</body>
+
+  </body>
 </html>
