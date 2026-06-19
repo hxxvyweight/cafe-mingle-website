@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import Beans from '../assets/belaroma.webp';
 import Food from '../assets/food2.webp';
 import Menu from '../assets/menu.webp';
+import MenuOne from '../assets/menu2.webp';
 import Coffee from '../assets/CoffeeFull.webp';
 import beanIcon from '../assets/coffeeBean.svg';
 import CoffeeIcon from '../assets/coffee.svg';
@@ -12,7 +13,7 @@ import Dog from '../assets/dog.svg';
 import Drinks from '../assets/drinks.webp';
 import FoodTwo from '../assets/food3.webp';
 import FoodThree from  '../assets/food.webp';
-import CoffeeMachine from '../assets/coffeeMachine.svg';
+import DoorDash from '../assets/doordash.jpg';
 const menuCategories = [
   {
     category: "Coffee & Hot Drinks",
@@ -249,10 +250,10 @@ const foodCategories = [
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <img src="/doordash.svg" alt="Door Dash Logo" class="relative  max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
@@ -305,7 +306,7 @@ const foodCategories = [
       <div class="flex flex-col min-h-[20vh] items-center">
       <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2">Proud to Serve High Quality Belaroma Coffee Beans<span class="text-sm self-center">Try clicking the photo!</span></p>
       <a href="https://www.sevenmiles.com.au/products/belaroma-range?srsltid=AfmBOooW_US_i8oRv4VMdEGwzImZqiDoiDdapojE2kdGvJD0c6JRVND3">
-      <Image src={ Beans } alt="Belaroma Coffee Beans" class="max-w-md p-2 max-h-xl rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Beans } alt="Belaroma Coffee Beans" class="max-w-[70vw] p-2 max-h-xl rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       </a>
       </div>
       
@@ -329,7 +330,8 @@ const foodCategories = [
       ))}
     </div>
 
-      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out mt-8"/>
+      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out mt-22"/>
+      <Image src={ MenuOne } alt="Belaroma Coffee Beans" class="w-xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out mt-24"/>
       </a>
       <div class="hidden md:block mt-18">
   {foodCategories.map((cat) => (
