@@ -14,16 +14,27 @@ import Facebook from '../assets/facebook.svg';
   <body class="bg-[#FDF1d6] text-stone-900 font-sans antialiased selection:bg-[#533A2F] selection:text-white max-w-screen">
     <slot />
 
-    <footer class="min-h-[45vh] md:min-h-[70vh] flex justify-evenly items-start text-center bg-[#533A2] text-center py-16">
+    <footer class="min-h-[45vh] md:min-h-[70vh] grid grid-cols-1 md:grid-cols-3 gap-8 justify-evenly items-start text-center bg-[#533A2] text-center py-16">
 
-      <div class="flex flex-col">
-        <h1 class="font-sans text-4xl font-bold">Trading Hours </h1>
+      <div class="flex flex-col gap-8 p-6">
+        <h1 class="font-sans text-4xl font-bold">Visit Us</h1>
+       
+        <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Trading Hours</h3>
         <p class="text-xl font-bold">Tuesday-Saturday</p>
         <p class="">7:30 am - 5:30 pm</p>
+        
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <h3 class="text-xl font-bold text-stone-900 mb-3">Contact Us</h3>
+        <p class="text-stone-600 leading-relaxed text-sm">A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
+      
       </div>
+      
+    </div>
 
       <div>
-        <p class="text-4xl font-black">Don't Miss Out by following our Socials!</p>
+        <p class="text-4xl font-black self-center">Don't Miss Out by following our Socials!</p>
       </div>
       
       
