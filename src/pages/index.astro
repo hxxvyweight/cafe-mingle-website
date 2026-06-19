@@ -12,6 +12,7 @@ import Dog from '../assets/dog.svg';
 import Drinks from '../assets/drinks.webp';
 import FoodTwo from '../assets/food3.webp';
 import FoodThree from  '../assets/food.webp';
+import CoffeeMachine from '../assets/coffeeMachine.svg';
 const menuCategories = [
   {
     category: "Coffee & Hot Drinks",
@@ -84,7 +85,128 @@ const menuCategories = [
     ]
   }
 ];
-
+const foodCategories = [
+  {
+    category: "All Day Breakfast",
+    items: [
+      { name: "TOAST WITH CONDIMENTS", price: "7.0" },
+      { name: "2 slices of bread with 1 choice of condiments", subtext: true },
+      { name: "Bread: White | Wholemeal | Multigrain | Sourdough | Turkish | Raisin | GF(+$2)", subtext: true },
+      { name: "TOASTED BANANA BREAD", price: "8.0" },
+      { name: "Served with butter", subtext: true },
+      { name: "HOT CROISSANT", price: "8.0" },
+      { name: "Served with jam and butter", subtext: true },
+      { name: "HAM CHEESE CROISSANT", price: "9.0" },
+      { name: "FRUIT SALAD", price: "13.5" },
+      { name: "with yoghurt & honey", subtext: true },
+      { name: "SANDWICH | TOASTIE", price: "From 8.5" },
+      { name: "Turkish bread with choice of Ham, Cheese, tomato or egg mayo", subtext: true },
+      { name: "1 Choice: $8.5 | 2 Choice: $9 | 3 Choice: $9.5 | 4 Choice: $10", subtext: true },
+      { name: "EGGS ON TOAST", price: "12.0" },
+      { name: "Eggs your way (Poached | Scrambled | Fried) with 2 slices sourdough & butter", subtext: true },
+      { name: "BACON AND EGG ROLL", price: "12.0" },
+      { name: "Fluffy scrambled eggs, Bacon and Korean sweet spicy sauce", subtext: true },
+      { name: "SMASHED AVO TOAST", price: "17.0" },
+      { name: "Sourdough, Smashed avo, Mingle's ricotta cheese cream, roasted cherry tomato, Lemon zest and Balsamic glaze", subtext: true },
+      { name: "EGG BENNY", price: "14.0" },
+      { name: "Sourdough, Spinach, Poached eggs and Hollandaise", subtext: true },
+      { name: "Ham +$4 | Bacon +$5 | Smoked salmon +$6", subtext: true },
+      { name: "FRENCH TOAST", price: "18.5" },
+      { name: "Thick white bread, Eggs, Mingle's ricotta cheese cream, Mixed berry compote and Maple syrup", subtext: true },
+      { name: "BIG BREKKY PLATE", price: "25.0" },
+      { name: "2 Eggs your choice, Beef sausage, Bacon, Smashed avo, Grilled tomato, Hash brown, Sauteed spinach and Mushroom, Grilled Halloumi with Sourdough", subtext: true },
+      { name: "CHIPS", price: "S 5.0 L 8.0" },
+      { name: "with Tomato sauce", subtext: true },
+      { name: "SWEET POTATO CHIPS", price: "S 6.0 L 9.0" },
+      { name: "with Aioli", subtext: true }
+    ]
+  },
+  {
+    category: "Kids Menu",
+    items: [
+      { name: "Scrambled Eggs and Bacon on Toast", price: "10.0" },
+      { name: "Nutella Sandwich", price: "7.0" },
+      { name: "Peanut butter Sandwich", price: "7.0" },
+      { name: "Chicken Strips with Chips & Tomato sauce", price: "12.0" },
+      { name: "Mini Cheese Burger with Chips & Tomato sauce", price: "12.0" },
+      { name: "Crumbed Flathead Fish and Chips & Tomato sauce", price: "12.0" }
+    ]
+  },
+  {
+    category: "Sides",
+    items: [
+      { name: "Tomato sauce | BBQ sauce", price: "50c" },
+      { name: "Aioli | Korean sweet spicy sauce", price: "1.0" },
+      { name: "Sweet chilli mayo | Bulgogi sauce", subtext: true },
+      { name: "Mingle's ricotta cheese cream | Hollandaise", price: "3.0" },
+      { name: "Truffle mayo | Egg | Spinach", subtext: true },
+      { name: "Smashed avo | Hash Brown(2pc)", price: "4.0" },
+      { name: "Mushroom | Grilled Tomato | Ham", subtext: true },
+      { name: "Halloumi(3pc) | Bacon | Beef sausage", price: "5.0" },
+      { name: "Beef patty | Smoked salmon", price: "6.0" }
+    ]
+  },
+  {
+    category: "Burgers (Add chips +$5)",
+    items: [
+      { name: "KOREAN BULGOGI BURGER", price: "16.0" },
+      { name: "Angus beef pattie, Cheese, Tomato, Lettuce, Spanish onion and Bulgogi mayo", subtext: true },
+      { name: "KOREAN CHICKEN BURGER", price: "15.0" },
+      { name: "Korean fried chicken, Cabbage, Spanish onion, Korean sweet spicy sauce and Mayo", subtext: true },
+      { name: "PRAWN KATSU BURGER", price: "17.0" },
+      { name: "Prawn katsu, Cabbage, Smashed egg and Sweet chili mayo", subtext: true },
+      { name: "VEGETARIAN BURGER", price: "14.0" },
+      { name: "Tofu patty, Tomato, Lettuce, Spanish onion and Vegan bulgogi sauce", subtext: true },
+      { name: "TRUFFLE POTATO BURGER", price: "17.0" },
+      { name: "Truffle potato katsu, Cabbage, Spanish onion and Truffle mayo", subtext: true },
+      { name: "DOUBLE STACK BURGER", price: "18.0" },
+      { name: "Double beef patties, Double cheese and Truffle mayo", subtext: true }
+    ]
+  },
+  {
+    category: "Mingle's Rice Bowl",
+    items: [
+      { name: "BULGOGI", price: "18.0" },
+      { name: "Beef bulgogi, Scrambled eggs, Roasted seaweed flakes and shallot", subtext: true },
+      { name: "SWEET SPICY PORK", price: "18.0" },
+      { name: "Gochujang pork, Scrambled eggs, Roasted seaweed flakes and shallot", subtext: true },
+      { name: "CHICKEN KATSU", price: "17.0" },
+      { name: "Chicken katsu, Scrambled eggs, Roasted seaweed flakes, shallot and Teriyaki mayo on the side", subtext: true },
+      { name: "VEGETARIAN TOFU", price: "16.0" },
+      { name: "Tofu fritters, Fried enoki mushrooms, Cabbage salad, shallot and Roasted seaweed flakes", subtext: true }
+    ]
+  },
+  {
+    category: "Korean Fried Chicken",
+    items: [
+      { name: "Boneless chicken served with cabbage salad and pickled radish", subtext: true },
+      { name: "Crispy Fried Chicken", price: "Half 18.0 | Whole 35.0" },
+      { name: "Sweet Spicy Chicken", price: "Half 20.0 | Whole 37.0" },
+      { name: "Soy Garlic Chicken", price: "Half 20.0 | Whole 37.0" },
+      { name: "Snow Cheese Chicken", price: "Half 20.0 | Whole 37.0" }
+    ]
+  },
+  {
+    category: "Curry",
+    items: [
+      { name: "Your choice of Main, served with Rice and Mingle's mild curry", subtext: true },
+      { name: "Plain", price: "10.0" },
+      { name: "Chicken Katsu", price: "17.0" },
+      { name: "Tofu and Mushroom", price: "16.0" },
+      { name: "Ebi Prawn Fry", price: "17.0" }
+    ]
+  },
+  {
+    category: "Light Meal",
+    items: [
+      { name: "Snowy Cheese Fries", price: "10.0" },
+      { name: "Garden Salad W / Lemon Dressing", price: "10.0" },
+      { name: "Mingle's Truffle Potato Croquette W / Truffle Mayo 3pcs", price: "12.0" },
+      { name: "Mozzarella Cheese Stick 5pcs", price: "12.0" },
+      { name: "Fish Taco 2pcs W / Sweet Chili Mayo", price: "12.0" }
+    ]
+  }
+];
 
 ---
 
@@ -105,7 +227,7 @@ const menuCategories = [
     </div>
   </header>
 
-  <main class="bg-[#CD7F55] w-full min-h-[90vh] py-12 md:py-20">
+  <main class="relative overflow-hidden bg-[#CD7F55] w-full min-h-[90vh] py-12 md:py-20">
     <div class="w-full max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
       
       <div class="w-64 h-64 mb-12 rounded-full bg-[#533A2F] shadow-xl flex items-center justify-center p-4 border-8 border-white/50">
@@ -127,10 +249,10 @@ const menuCategories = [
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <img src="/doordash.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
+          <img src="/doordash.svg" alt="Door Dash Logo" class="relative  max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
         </a>
       </div>
       </div>
@@ -167,7 +289,7 @@ const menuCategories = [
   </section>
 
   <section id="about"class="bg-[#1a1311] min-w-full min-h-screen  py-12 md:py-20 items-center">
-    <div class="w-full max-w-6xl mx-auto px-6 flex flex-col justify-between items-center text-center">
+    <div class="w-full max-w-6xl mx-auto p-12 flex flex-col justify-center items-center min-h-[10vh]">
       
       <h1 class="text-4xl md:text-6xl font-black text-zinc-100 tracking-tight mb-6">
         About Us
@@ -179,21 +301,25 @@ const menuCategories = [
       
     </div>
 
-    <div class="flex flex-col px-8 py-16 min-w-full place-items-center justify-center gap-16">
-      <div class="flex flex-col min-h-[70vh]">
+    <div class="flex flex-col px-8 py-16 min-w-full  justify-center gap-16">
+      <div class="flex flex-col min-h-[20vh] items-center">
       <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2">Proud to Serve High Quality Belaroma Coffee Beans<span class="text-sm self-center">Try clicking the photo!</span></p>
       <a href="https://www.sevenmiles.com.au/products/belaroma-range?srsltid=AfmBOooW_US_i8oRv4VMdEGwzImZqiDoiDdapojE2kdGvJD0c6JRVND3">
-      <Image src={ Beans } alt="Belaroma Coffee Beans" class="w-full max-h-120 rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Beans } alt="Belaroma Coffee Beans" class="max-w-md p-2 max-h-xl rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       </a>
       </div>
       
-      <div class="flex flex-col text-white gap-8 items-start min-h-[70vh]">
-      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2 items-start text-left">Discover Our Menu<span class="text-sm">To View our Full Menu, Click the text or Image Below</span></p>
+      
+      
+      <div class="grid md:grid-cols-2  justify-between text-white gap-8 min-h-[90vh]">
+        
       
       <a href="/menu">
-        <div>
+      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2 items-start flex-2">Discover Our Menu<span class="text-sm">To View our Full Menu, Click the Image Below</span></p>
+      <div>
       {menuCategories.map((cat) => (
         <div class="category-block">
+        <p class="text-2xl font-bold py-4 underline -translate-y-2 mb-8">{cat.category}</p>
         {cat.items.map((item) => (
         <p class="text-white tracking-widest p-2">
         {item.name} {item.price ? ` ${item.price}` : ''}
@@ -202,19 +328,43 @@ const menuCategories = [
       </div>
       ))}
     </div>
-      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+
+      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out mt-8"/>
       </a>
-      </div>
+      <div class="hidden md:block mt-18">
+  {foodCategories.map((cat) => (
+    <a href="/menu" class="category-block ">
+      <p class="text-2xl font-bold py-4 underline -translate-y-2 mb-10">{cat.category}</p>
       
-      <p class="text-3xl tracking-widest font-light  text-white mb-12 mt-14 italic">Take a Sneek Peek at some Items!</p>
-      <div class="grid md:grid-cols-3 gap-8 justify-center place-items-center h-auto  max-w-4xl">
+      {cat.items.map((item) => (
+        <p class={item.subtext ? "text-stone-400 text-sm tracking-widest px-2 pb-2 -mt-2" : "text-white tracking-widest p-2"}>
+          {item.name} {item.price ? ` ${item.price}` : ''}
+        </p>
+      ))}
+      
+    </a>
+  ))}
+</div>
+
+      </div>
+      <div>
+      <p class="text-3xl text-center tracking-widest font-black text-stone-900 bg-[#CD7F55] mb-12 mt-14 italic shadow-xl p-4">Take a Sneak Peek at some Items!</p>
+      <div class="grid md:grid-cols-5 gap-8 justify-center place-items-center h-auto  max-w-full">
       <Image src={ Food } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
       <Image src={ Drinks } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
       <Image src={ FoodTwo } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       <Image src={ FoodThree } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       <Image src={ Coffee } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Breakfast } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       </div>
+      </div>
+    </div>
+      
+      
     </div>
         
         
