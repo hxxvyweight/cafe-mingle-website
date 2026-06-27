@@ -1,0 +1,73 @@
+[
+  {
+    "category": "Coffee & Hot Drinks",
+    "items": [
+      { "name": "SHORT BLACK (ESPRESSO)", "price": "3.5" },
+      { "name": "MACCHIATO | PICCOLO LATTE", "price": "4.0" },
+      { "name": "LONG BLACK | CAPPUCCINO | FLAT WHITE | LATTE", "price": "S 4.5 L 5.2" },
+      { "name": "MOCHA | HOT CHOCOLATE", "price": "S 4.5 L 5.2" },
+      { "name": "CHAI LATTE | MATCHA LATTE", "price": "S 5.2 L 5.9" },
+      { "name": "DIRTY CHAI LATTE | DIRTY MATCHA LATTE", "price": "S 5.8 L 6.2" },
+      { "name": "BABYCCINO", "price": "2.0" }
+    ]
+  },
+  {
+    "category": "Additions",
+    "items": [
+      { "name": "ADDITIONS", "price": "60c" },
+      { "name": "Extra Shot", "subtext": true },
+      { "name": "Almond | Lactose Free | Oat | Soy", "subtext": true },
+      { "name": "Caramel | Hazelnut | Vanilla Syrups | Cream", "subtext": true }
+    ]
+  },
+  {
+    "category": "Cup of Ice Cream",
+    "items": [
+      { "name": "CUP OF ICE CREAM", "price": "$5" },
+      { "name": "2 Scoops Ice Cream", "subtext": true },
+      { "name": "Vanilla | Matcha | Coffee", "subtext": true },
+      { "name": "Choice of Syrup (Choco / Caramel / Strawberry)", "subtext": true }
+    ]
+  },
+  {
+    "category": "Soft Drinks",
+    "items": [
+      { "name": "SOFT DRINKS", "price": "$3" },
+      { "name": "Spring Water | Sparkling Water", "subtext": true },
+      { "name": "Coke | Coke Zero | Lemonade", "subtext": true },
+      { "name": "Lemon Lime Bitter | Welch's", "subtext": true }
+    ]
+  },
+  {
+    "category": "Tea",
+    "items": [
+      { "name": "TEA", "price": "$5 per person" },
+      { "name": "English Breakfast | Earl Grey | Green Tea", "subtext": true },
+      { "name": "Peppermint | Chamomile", "subtext": true },
+      { "name": "Lemongrass & Ginger", "subtext": true }
+    ]
+  },
+  {
+    "category": "Cold Drinks & Juices",
+    "items": [
+      { "name": "AFFOGATO", "price": "5.0" },
+      { "name": "ICED LONG BLACK", "price": "6.5" },
+      { "name": "ICED LATTE", "price": "6.5" },
+      { "name": "ICED CHOCO | ICED COFFEE | ICED MOCHA", "price": "8.0" },
+      { "name": "Served with Ice Cream & Whipped Cream", "subtext": true },
+      { "name": "ICED CHAI | ICED MATCHA", "price": "8.0" },
+      { "name": "Served with Ice Cream & Whipped Cream", "subtext": true },
+      { "name": "MILKSHAKE", "price": "S 6.5 L 8.5" },
+      { "name": "Choco | Caramel | Strawberry | Vanilla", "subtext": true },
+      { "name": "Thick shake +$1.5", "subtext": true },
+      { "name": "FRESH FRUIT JUICE", "price": "8.5" },
+      { "name": "Orange | Apple | Watermelon", "subtext": true },
+      { "name": "Pineapple | Carrot | Ginger", "subtext": true },
+      { "name": "ADE", "price": "8.0" },
+      { "name": "Honey Yuza | Honey Ginger", "subtext": true },
+      { "name": "SMOOTHIES", "price": "8.5" },
+      { "name": "Banana | Strawberry | Blueberry | Matcha", "subtext": true }
+    ]
+  }
+]
+

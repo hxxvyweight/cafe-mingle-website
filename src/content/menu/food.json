@@ -1,0 +1,89 @@
+[
+  {
+    "category": "All Day Breakfast",
+    "items": [
+      { "name": "TOAST WITH CONDIMENTS", "price": "7.0" },
+      { "name": "2 slices of bread with 1 choice of condiments", "subtext": true },
+      { "name": "Bread: White | Wholemeal | Multigrain | Sourdough | Turkish | Raisin | GF(+$2)", "subtext": true },
+      { "name": "TOASTED BANANA BREAD", "price": "8.0" },
+      { "name": "Served with butter", "subtext": true },
+      { "name": "HOT CROISSANT", "price": "8.0" },
+      { "name": "Served with jam and butter", "subtext": true },
+      { "name": "HAM CHEESE CROISSANT", "price": "9.0" },
+      { "name": "FRUIT SALAD", "price": "13.5" },
+      { "name": "with yoghurt & honey", "subtext": true },
+      { "name": "SANDWICH | TOASTIE", "price": "From 8.5" },
+      { "name": "Turkish bread with choice of Ham, Cheese, tomato or egg mayo", "subtext": true },
+      { "name": "1 Choice: $8.5 | 2 Choice: $9 | 3 Choice: $9.5 | 4 Choice: $10", "subtext": true },
+      { "name": "EGGS ON TOAST", "price": "12.0" },
+      { "name": "Eggs your way (Poached | Scrambled | Fried) with 2 slices sourdough & butter", "subtext": true },
+      { "name": "BACON AND EGG ROLL", "price": "12.0" },
+      { "name": "Fluffy scrambled eggs, Bacon and Korean sweet spicy sauce", "subtext": true },
+      { "name": "SMASHED AVO TOAST", "price": "17.0" },
+      { "name": "Sourdough, Smashed avo, Mingle's ricotta cheese cream, roasted cherry tomato, Lemon zest and Balsamic glaze", "subtext": true },
+      { "name": "EGG BENNY", "price": "14.0" },
+      { "name": "Sourdough, Spinach, Poached eggs and Hollandaise", "subtext": true },
+      { "name": "Ham +$4 | Bacon +$5 | Smoked salmon +$6", "subtext": true },
+      { "name": "FRENCH TOAST", "price": "18.5" },
+      { "name": "Thick white bread, Eggs, Mingle's ricotta cheese cream, Mixed berry compote and Maple syrup", "subtext": true },
+      { "name": "BIG BREKKY PLATE", "price": "25.0" },
+      { "name": "2 Eggs your choice, Beef sausage, Bacon, Smashed avo, Grilled tomato, Hash brown, Sauteed spinach and Mushroom, Grilled Halloumi with Sourdough", "subtext": true },
+      { "name": "CHIPS", "price": "S 5.0 L 8.0" },
+      { "name": "with Tomato sauce", "subtext": true },
+      { "name": "SWEET POTATO CHIPS", "price": "S 6.0 L 9.0" },
+      { "name": "with Aioli", "subtext": true }
+    ]
+  },
+  {
+    "category": "Kids Menu",
+    "items": [
+      { "name": "Scrambled Eggs and Bacon on Toast", "price": "10.0" },
+      { "name": "Nutella Sandwich", "price": "7.0" },
+      { "name": "Peanut butter Sandwich", "price": "7.0" },
+      { "name": "Chicken Strips with Chips & Tomato sauce", "price": "12.0" },
+      { "name": "Mini Cheese Burger with Chips & Tomato sauce", "price": "12.0" },
+      { "name": "Crumbed Flathead Fish and Chips & Tomato sauce", "price": "12.0" }
+    ]
+  },
+  {
+    "category": "Sides",
+    "items": [
+      { "name": "Tomato sauce | BBQ sauce", "price": "50c" },
+      { "name": "Aioli | Korean sweet spicy sauce", "price": "1.0" },
+      { "name": "Sweet chilli mayo | Bulgogi sauce", "subtext": true },
+      { "name": "Mingle's ricotta cheese cream | Hollandaise", "price": "3.0" },
+      { "name": "Truffle mayo | Egg | Spinach", "subtext": true },
+      { "name": "Smashed avo | Hash Brown(2pc)", "price": "4.0" },
+      { "name": "Mushroom | Grilled Tomato | Ham", "subtext": true },
+      { "name": "Halloumi(3pc) | Bacon | Beef sausage", "price": "5.0" },
+      { "name": "Beef patty | Smoked salmon", "price": "6.0" }
+    ]
+  },
+  {
+    "category": "Burgers (Add chips +$5)",
+    "items": [
+      { "name": "KOREAN BULGOGI BURGER", "price": "16.0" },
+      { "name": "Angus beef pattie, Cheese, Tomato, Lettuce, Spanish onion and Bulgogi mayo", "subtext": true },
+      { "name": "KOREAN CHICKEN BURGER", "price": "15.0" },
+      { "name": "Korean fried chicken, Cabbage, Spanish onion, Korean sweet spicy sauce and Mayo", "subtext": true },
+      { "name": "PRAWN KATSU BURGER", "price": "17.0" },
+      { "name": "Prawn katsu, Cabbage, Smashed egg and Sweet chili mayo", "subtext": true },
+      { "name": "VEGETARIAN BURGER", "price": "14.0" },
+      { "name": "Tofu patty, Tomato, Lettuce, Spanish onion and Vegan bulgogi sauce", "subtext": true },
+      { "name": "TRUFFLE POTATO BURGER", "price": "17.0" },
+      { "name": "Truffle potato katsu, Cabbage, Spanish onion and Truffle mayo", "subtext": true },
+      { "name": "DOUBLE STACK BURGER", "price": "18.0" },
+      { "name": "Double beef patties, Double cheese and Truffle mayo", "subtext": true }
+    ]
+  },
+  {
+    "category": "Mingle's Rice Bowl",
+    "items": [
+      { "name": "BULGOGI", "price": "18.0" },
+      { "name": "Beef bulgogi, Scrambled eggs, Roasted seaweed flakes and shallot", "subtext": true },
+      { "name": "SWEET SPICY PORK", "price": "18.0" },
+      { "name": "Gochujang pork, Scrambled eggs, Roasted seaweed flakes and shallot", "subtext": true }
+    ]
+  }
+]
+
