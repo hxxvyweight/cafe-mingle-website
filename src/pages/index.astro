@@ -58,10 +58,10 @@ import foodMenu from '../content/menu/food.json'
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  active:scale-98 max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
@@ -98,7 +98,7 @@ import foodMenu from '../content/menu/food.json'
   </section>
 
   <section id="about"class="bg-[#1a1311] min-w-full min-h-screen  py-12 md:py-20 items-center">
-    <div class="w-full max-w-6xl mx-auto p-12 flex flex-col justify-center items-center min-h-[10vh]">
+    <div class="w-full max-w-6xl mx-auto p-12 flex flex-col md:flex-row justify-around items-center min-h-[10vh] gap-8">
       
       <h1 class="text-4xl md:text-6xl font-black text-zinc-100 tracking-tight mb-6">
         About Us
@@ -121,25 +121,33 @@ import foodMenu from '../content/menu/food.json'
       
       
       <p class="text-white text-xl tracking-widest italic flex flex-col p-2 items-center">Discover Our Menu<span class="text-sm">To View our Full Menu, Click the Image or text Below</span></p>
-      <div class="grid md:grid-cols-2  justify-center text-white gap-8 min-h-[90vh] p-16">
+      <div>
+      
+      <div class="flex flex-col text-center  place-items-center justify-center text-white gap-8 min-h-[90vh] p-4 w-auto">
         
       
       <a href="/menu">
       <div>
-      {drinksMenu.map((cat) => (
-        <div class="category-block">
-        <p class="text-2xl font-bold py-4 underline mb-8">{cat.category}</p>
-        {cat.items.map((item) => (
-        <p class="text-white tracking-widest p-2">
-        {item.name} {item.price ? ` ${item.price}` : ''}
+  {drinksMenu.map((cat) => (
+    <a href="/menu" class="category-block ">
+      <p class="text-2xl font-bold py-4 underline mb-8">{cat.category}</p>
+      
+      {cat.items.map((item) => (
+        <p class={item.subtext ? "text-stone-400 text-sm tracking-widest px-2 pb-2 -mt-2" : "text-white tracking-widest p-2"}>
+          {item.name} {item.price ? ` ${item.price}` : ''}
         </p>
       ))}
-      </div>
-      ))}
-    </div>
-
       
-      <div class="hidden md:block mt-18">
+    </a>
+  ))}
+</div>
+      <Image src={ Menu } alt="Menu One Cafe Mingle" class="w-4xl h-2xl  rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
+
+      </div>
+      
+      <div class="flex flex-col text-center  place-items-center justify-center text-white gap-8 min-h-[90vh] p-4 w-auto">
+      
+      <div class="">
   {foodMenu.map((cat) => (
     <a href="/menu" class="category-block ">
       <p class="text-2xl font-bold py-4 underline mb-8">{cat.category}</p>
@@ -154,11 +162,11 @@ import foodMenu from '../content/menu/food.json'
   ))}
 </div>
 
-      <Image src={ Menu } alt="Belaroma Coffee Beans" class="w-2xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
-      <Image src={ MenuOne } alt="Belaroma Coffee Beans" class="w-2xl md:min-w-150 h-auto rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
+      <Image src={ MenuOne } alt="Menu Two Cafe Mingle" class="w-4xl h-2xl  rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
 
       </div>
-      <div>
+
+      <div class="max-w-screen">
       <p class="text-3xl text-center tracking-widest font-black text-zinc-100 bg-black/5 mb-12 mt-14 italic shadow-xl p-4">Take a Sneak Peek at some Items!</p>
       <div class="grid md:grid-cols-5 gap-8 justify-center place-items-center h-auto  max-w-full">
       <Image src={ Food } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
@@ -174,7 +182,10 @@ import foodMenu from '../content/menu/food.json'
       </div>
       </div>
     </div>
-      
+
+    <a href="/">
+    <button class="text-stone-900 tracking-widest font-black text-xl bg-zinc-100 rounded-xl h-14 active:scale-95 transition-all duration-300 w-full md:w-[115rem] hover:scale-98">Home</button>
+    </a>
       
     </div>
         

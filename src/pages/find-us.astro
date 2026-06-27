@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import DoorDash from '../assets/doordash.jpg';
 ---
 
 <Layout title="Cafe Mingle | Korean-Inspired Cafe">
@@ -35,19 +37,21 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="flex gap-4 items-center justify-center">
       
+        
         <div class="flex flex-col items-center gap-4 justify-between flex-wrap">
         <p class="italic px-8 py-4 text-white font-bold tracking-wide rounded-lg nav-animate">
           Order Online Via
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <img src="/doordash.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-brand-red active:bg-white hover:bg-white transition-all ease-in-out rounded-2xl border-2 shadow-md px-14 hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white hover:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
+
         
         
       </div>

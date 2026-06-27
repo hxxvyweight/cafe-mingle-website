@@ -3,6 +3,7 @@ import '../styles/global.css';
 const { title } = Astro.props;
 import { Image } from 'astro:assets';
 import Instagram from '../assets/instagram.svg';
+import Machine from '../assets/coffeeMachine.svg';
 import Facebook from '../assets/facebook.svg';
 ---
 <html lang="en" class="scroll-smooth">
@@ -14,18 +15,26 @@ import Facebook from '../assets/facebook.svg';
   <body class=" bg-[#FDF1d6] text-stone-900 font-sans antialiased selection:bg-[#533A2F] selection:text-white max-w-screen">
     <slot />
 
-    <footer class="min-h-[45vh] md:min-h-[70vh] grid grid-cols-1 md:grid-cols-3 gap-8 justify-evenly items-start text-center bg-[#533A2] text-center py-16">
+    <footer class="relative min-h-[45vh] md:min-h-[70vh] grid grid-cols-1 gap-8 text-center bg-[#533A2] text-center py-16">
 
+      
+
+      <Image src= { Machine } alt="Coffee Machine Illustration" class="absolute inset-0 w-full object-cover overflow-hidden h-full"/>
+
+      <div class="bg-black/80 z-0 absolute inset-0 w-full h-full"></div>
+
+
+      <div class="relative z-20 flex flex-col  items-center gap-8 p-6">
       <div class="flex flex-col gap-8 p-6">
-        <h1 class="font-sans text-4xl font-bold">Visit Us</h1>
+        <h1 class="font-sans text-zinc-100 text-4xl font-bold">Visit Us</h1>
        
-        <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <div class="flex flex-col items-center justify-center gap-4 bg-zinc-100 p-16 rounded-2xl border border-stone-200/50">
         <h3 class="text-xl font-bold text-stone-900 mb-3">Trading Hours</h3>
         <p class="text-xl font-bold">Tuesday-Saturday</p>
         <p class="">7:30 am - 5:30 pm</p>
         
         </div>
-        <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
+        <div class="flex flex-col items-center justify-center gap-4 bg-zinc-100 p-16 rounded-2xl border border-stone-200/50">
         <h3 class="text-xl font-bold text-stone-900 mb-3">Contact Us</h3>
         <p class="text-stone-600 leading-relaxed text-sm">A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
       
@@ -34,18 +43,19 @@ import Facebook from '../assets/facebook.svg';
     </div>
 
       <div>
-        <p class="text-4xl font-black self-center">Don't Miss Out by following our Socials!</p>
+        <p class="text-4xl text-zinc-100 font-black self-center">Don't Miss Out by following our Socials!</p>
       </div>
       
       
       <div class="max-h-auto max-w-auto flex gap-4 justify-center">
         <a href="https://www.instagram.com/cafe_mingle_">
-        <Image src={ Instagram } alt="Instagram Logo SVG" class="h-auto w-15 hover:border-3 hover:bg-gradient-to-br rounded-xl transition-all 1s bg-clip from-[#feda75] via-[#fa7e1e] via-[#d62976] to-[#962fbf] to-[#4f5bd5] ease-in-out"/>
+        <Image src={ Instagram } alt="Instagram Logo SVG" class="h-auto w-15 hover:scale-95  rounded-xl transition-all duration-100 bg-white p-2 ease-in-out"/>
         </a>
         <a href="https://www.facebook.com/cafemingleoakflats/">
-        <Image src={ Facebook } alt="Instagram Logo SVG" class="h-auto w-15 hover:border-3 rounded-xl transition-all 1s bg-clip hover:bg-[#1877F2] ease-in-out"/>
+        <Image src={ Facebook } alt="Instagram Logo SVG" class="h-auto w-15 hover:scale-95 rounded-xl transition-all 0.5s bg-clip bg-white p-2 ease-in-out"/>
         </a>
       </div>
+    </div>
 
 
     </footer>
