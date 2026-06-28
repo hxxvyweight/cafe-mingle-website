@@ -58,10 +58,10 @@ import foodMenu from '../content/menu/food.json'
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  active:scale-98 w-40 h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative place-items-center active:scale-98 w-40 h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 min-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
@@ -97,10 +97,10 @@ import foodMenu from '../content/menu/food.json'
     </div>
   </section>
 
-  <section id="about"class="bg-[#1a1311] min-w-full min-h-screen  py-12 md:py-20 items-center">
-    <div class="w-full max-w-6xl mx-auto p-12 flex flex-col md:flex-row justify-around items-center min-h-[10vh] gap-8">
+  <section id="about"class="bg-[#1a1311] min-w-full min-h-screen md:place-items-center">
+    <div class="w-full max-w-6xl mx-auto p-12 flex flex-col md:flex-row justify-center items-center min-h-[10vh] gap-8">
       
-      <h1 class="text-4xl md:text-6xl font-black text-zinc-100 tracking-tight mb-6">
+      <h1 class="text-4xl md:text-6xl font-black font-merienda text-zinc-100 tracking-tight mb-6 py-14">
         About Us
       </h1>
       <p class="text-lg text-zinc-100 font-medium leading-relaxed">Welcome to Cafe Mingle, where Korean hospitality meets the perfect cup of coffee. We are passionate about creating a cozy space in the heart of 
@@ -110,17 +110,17 @@ import foodMenu from '../content/menu/food.json'
       
     </div>
 
-    <div class="flex flex-col px-8 py-16 min-w-full  justify-center gap-16">
+    <div class="flex flex-col px-8 py-16 max-w-7xl justify-center gap-16">
       <div class="flex flex-col min-h-[20vh] items-center">
-      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2">Proud to Serve High Quality Belaroma Coffee Beans<span class="text-sm self-center">Try clicking the photo!</span></p>
+      <p class="text-white text-xl tracking-widest italic self-center flex flex-col p-2 text-center">Proud to Serve High Quality Belaroma Coffee Beans<span class="text-sm self-center mt-2">Try clicking the photo!</span></p>
       <a href="https://www.sevenmiles.com.au/products/belaroma-range?srsltid=AfmBOooW_US_i8oRv4VMdEGwzImZqiDoiDdapojE2kdGvJD0c6JRVND3">
-      <Image src={ Beans } alt="Belaroma Coffee Beans" class="max-w-sm md:max-w-2xl p-2 max-h-xl rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
+      <Image src={ Beans } alt="Belaroma Coffee Beans" class="max-w-auto md:max-w-2xl p-2 max-h-xl rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>
       </a>
       </div>
       
       
       
-      <p class="text-white text-xl tracking-widest italic flex flex-col p-2 items-center">Discover Our Menu<span class="text-sm">To View our Full Menu, Click the Image or text Below</span></p>
+      <p class="text-white text-xl tracking-widest italic flex flex-col p-2 items-center">Discover Our Menu<span class="text-sm mt-4 text-center">To View our Full Menu, Click the Image or text Below</span></p>
       <div>
       
       <div class="flex flex-col text-center  place-items-center justify-center text-white gap-8 min-h-[90vh] p-4 w-auto">
@@ -172,9 +172,9 @@ import foodMenu from '../content/menu/food.json'
     </a>
       </div>
 
-      <p class="text-3xl text-center tracking-widest font-black text-zinc-100 bg-black/5 mb-12 mt-14 italic shadow-xl p-4">Take a Sneak Peek at some Items!</p>
+      <p class="text-xl font-merienda text-center tracking-widest font-light text-zinc-100 bg-black/5 mb-12 mt-14 italic shadow-xl p-4">Take a Sneak Peek at some Items!</p>
       <div class="max-w-screen items-center justify-center flex">
-      <div class="grid md:grid-cols-5 gap-8 justify-center place-items-center h-auto  max-w-3/4">
+      <div class="grid md:grid-cols-5 gap-8 justify-center place-items-center h-auto  max-w-7xl md:max-w-5xl">
       <Image src={ Food } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
       <Image src={ Drinks } alt="Store Front" class="w-full max-h-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
       <Image src={ FoodTwo } alt="Store Front" class="w-full rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out "/>

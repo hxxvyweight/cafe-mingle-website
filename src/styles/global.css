@@ -1,6 +1,6 @@
 /* 1. Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 /* 2. Inject Tailwind v4 (This replaces the old @tailwind base/components/utilities) */
 @import "tailwindcss";
 
@@ -27,6 +27,7 @@
 
 @theme {
   --color-brand-red: #EB1700;
+  --font-merienda: 'Merienda', cursive;
 }
 
 /* Custom shortcut class */
