@@ -12,6 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
+    "@fontsource/dm-serif-display": "^5.2.8",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/merienda": "^5.2.7",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.6",
     "tailwindcss": "^4.3.0"
