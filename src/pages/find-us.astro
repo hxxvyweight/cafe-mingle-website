@@ -3,8 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import DoorDash from '../assets/doordash.jpg';
 import coffeeCup from '../assets/coffeeCup.svg';
-import Parking from '../assets/parking.svg';
-import Dog from '../assets/dog.svg';
+import Storefront from '../assets/storefront.webp';
+import Sunset from '../assets/insta2.avif';
+import GoogleMaps from '../assets/googleMaps.png';
 ---
 
 <Layout title="Cafe Mingle | Korean-Inspired Cafe">
@@ -24,7 +25,7 @@ import Dog from '../assets/dog.svg';
     </div>
   </header>
 
-  <main class="bg-[#CD7F55] w-full min-h-[20vh] py-12 md:py-20">
+  <main class="relative overflow-hidden bg-[#CD7F55] w-full min-h-[90vh] py-12 md:py-20">
     <div class="w-full max-w-6xl mx-auto px-6 flex flex-col items-center text-center">
       
       <div class="w-64 h-64 mb-12 rounded-full bg-[#533A2F] shadow-xl flex items-center justify-center p-4 border-8 border-white/50">
@@ -40,21 +41,19 @@ import Dog from '../assets/dog.svg';
 
       <div class="flex gap-4 items-center justify-center">
       
-        
         <div class="flex flex-col items-center gap-4 justify-between flex-wrap">
-        <p class="italic px-8 py-4 text-white font-bold tracking-wide rounded-lg nav-animate">
+        <p class="italic px-8 py-4 text-black font-bold tracking-widest rounded-lg nav-animate">
           Order Online Via
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  active:scale-98 w-40 h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
-
         
         
       </div>
@@ -62,29 +61,32 @@ import Dog from '../assets/dog.svg';
     </div>
   </main>
 
-  <section class="w-full max-w-[90vw] mx-auto px-6 py-16">
+  <section class="grid grid-cols-1 w-full h-full mx-auto px-6 py-16 text-center">
+    
     <h2 class="text-2xl md:text-3xl font-bold text-stone-800 mb-10 border-b-2 border-[#533A2F]/20 pb-4 inline-block">
-      Why Choose Cafe Mingle
+      Where to find Us!
     </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="relative grid grid-cols-1 place-items-center md:p-16 gap-8">
       
-      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
-        <h3 class="text-xl font-bold text-stone-900 mb-3">Cozy Brunch</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">A welcoming atmosphere designed to help you slow down and enjoy the simple things.</p>
-        <Image src={ coffeeCup } alt="SVG Icon of Coffee Cup" class="w-18 h-auto"/>
-      </div>
-      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50 ">
-        <h3 class="text-xl font-bold text-stone-900 mb-3">Easy Parking</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">No stress needed. We have a convenient parking lot located right nearby.</p>
-        <Image src={ Parking } alt="SVG Icon of Car Parking" class="w-18 h-auto"/>
-      </div>
-      <div class="flex flex-col items-center justify-center gap-4 bg-white/60 p-16 rounded-2xl border border-stone-200/50">
-        <h3 class="text-xl font-bold text-stone-900 mb-3">Pet Friendly</h3>
-        <p class="text-stone-600 leading-relaxed text-sm">Four-legged friends are always welcome! Bring your pup along for your morning coffee.</p>
-        <Image src={ Dog } alt="SVG Icon of Coffee Cup" class="w-18 h-auto"/>
-      </div>
+      <div class="flex flex-col gap-4  w-auto h-auto rounded-2xl border border-stone-200/50">
+        <a href="https://www.google.com/maps/place/Cafe+mingle/@-34.5648142,150.8182504,16.7z/data=!4m6!3m5!1s0x6b131304aad69f17:0x2c06c0b65c8d2ad2!8m2!3d-34.5646522!4d150.8190975!16s%2Fg%2F11mcxj8m6n?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D">
+        <Image src={ GoogleMaps } alt="SVG Icon of Coffee Cup" class="md:w-3xl w-5xl h-auto rounded-xl"/>
+      </a>
     </div>
+
+
+
+    <div class="grid grid-cols-1 h-sm w-xl gap-8 z-20 max-w-fit hidden">
+
+      <Image src={ Storefront } alt="Front of the Store Photo" class="rounded-sm w-xl"/>
+      <Image src={ Sunset } alt="Front of the Store Photo" class="rounded-sm"/>
+
+
+    </div>
+
+    </div>
+  
   </section>
 
 </Layout>

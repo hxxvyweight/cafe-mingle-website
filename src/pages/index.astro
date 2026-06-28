@@ -31,7 +31,7 @@ import foodMenu from '../content/menu/food.json'
       </nav>
       <div class="text-left md:text-right">
         <h2 class="text-2xl font-bold tracking-widest text-stone-900 uppercase">Cafe Mingle</h2>
-        <p class="text-xs text-stone-500 tracking-widest uppercase mt-1">Korean-Inspired Cafe | 한국풍 카페</p>
+        <p class="text-xs font-[500] text-stone-900 tracking-widest uppercase mt-1">Korean-Inspired Cafe | 한국풍 카페</p>
       </div>
     </div>
   </header>
@@ -53,15 +53,15 @@ import foodMenu from '../content/menu/food.json'
       <div class="flex gap-4 items-center justify-center">
       
         <div class="flex flex-col items-center gap-4 justify-between flex-wrap">
-        <p class="italic px-8 py-4 text-white font-bold tracking-wide rounded-lg nav-animate">
+        <p class="italic px-8 py-4 text-black font-bold tracking-widest rounded-lg nav-animate">
           Order Online Via
         </p>
         <div class="flex gap-8">
           <a href="https://www.doordash.com/en-AU/store/cafe-mingle-oak-flats-35394099">
-          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  active:scale-98 max-w-40 min-h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
+          <Image src={ DoorDash } alt="Door Dash Logo" class="relative  active:scale-98 w-40 h-15 bg-white transition-transform border-2 shadow-md duration-300 ease-in-out  rounded-2xl  hover:-translate-y-1 ease-out"/>
           </a>
           <a href="https://www.ubereats.com/au/store/cafe-mingle/xHo94lp7SEaBVttxOzbApQ?srsltid=AfmBOoqWYOZ5gQXyCkNh9NY-GAaWzpYTUCrHZzAlZcpBS9E4QKGf3umO">
-          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 max-w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
+          <img src="/ubereats.svg" alt="Door Dash Logo" class="relative active:scale-98 w-40 h-15 object-contain bg-[#06C167] rounded-2xl border-2 shadow-md px-14 transition-transform duration-300 ease-out hover:-translate-y-1 active:bg-white"/>
         </a>
       </div>
       </div>
@@ -143,7 +143,7 @@ import foodMenu from '../content/menu/food.json'
 </div>
   
 
-<a href="/menu">
+<a href="/menu" aria-label="View the full Menu">
 <Image src={ Menu } alt="Menu One Cafe Mingle" class="w-4xl h-2xl  rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
 </a>
       </div>
@@ -166,7 +166,7 @@ import foodMenu from '../content/menu/food.json'
 </div>
 
 
-<a href="/menu">
+<a href="/menu" aria-label="View the full Menu">
       <Image src={ MenuOne } alt="Menu Two Cafe Mingle" class="w-4xl h-2xl  rounded-2xl shadow-xl hover:-translate-y-2 duration-300 ease-in-out"/>
 
     </a>
@@ -189,10 +189,11 @@ import foodMenu from '../content/menu/food.json'
       </div>
     </div>
 
-    <a href="/" class="flex justify-center items-center">
-    <button class="text-stone-900 tracking-widest font-black text-xl bg-zinc-100 rounded-xl h-14 active:scale-95 transition-all duration-300 w-xl hover:scale-98">Home</button>
+    <div class=" flex justify-center items-center text-center">
+    <a href="/" class="flex justify-center items-center text-center text-stone-900 tracking-widest font-black text-xl bg-zinc-100 rounded-xl h-14 active:scale-95 transition-all duration-300 w-xl hover:scale-98">
+    Home
     </a>
-      
+    </div>
     </div>
         
         
